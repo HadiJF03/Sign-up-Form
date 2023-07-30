@@ -76,9 +76,23 @@ legend{
     width: 20vw;
 
 }
+input:invalid{
+    border-color: red;
+    border-style: solid;
+    outline: none;
+    border-style: solid;
+    border-width: 2px;
+}
 input{
     border-width: 0;
     border-radius: 15px;
+}
+input:focus{
+    border-color: rgb(37, 144, 245);
+    border-style: solid;
+    outline: none;
+    border-width: 2px;
+    box-shadow: 5px 5px 10px -5px black;
 }
 .create{
     background-color: #dda15e;
@@ -99,13 +113,7 @@ a{
     color: #5e7c5c;
 }
 
-input:focus{
-    border-color: rgb(37, 144, 245);
-    border-style: solid;
-    outline: none;
-    border-width: 3px;
-    box-shadow: 5px 5px 10px -5px black;
-}
+
 button:hover{
     color: #dda15e;
     cursor: pointer;
@@ -113,4 +121,12 @@ button:hover{
 }
 a:hover{
     color: #dda15e;
+}
+
+.error{
+    border-color: red;
+    border-style: solid;
+    outline: none;
+    border-style: solid;
+    border-width: 2px;
 }

@@ -30,22 +30,21 @@
             </div>
 
             <form action="#" method="post">
-                <legend>Sign-up Now!</legend>
-                
                 <div class="form-wrapper">
+                    <legend>Sign-up Now!</legend>
                     <div class="pair">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name">
+                        <label for="first-name">*First Name</label>
+                        <input type="text" name="first-name" required>
                     </div>
 
                     <div class="pair">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name">
+                        <label for="last-name">*Last Name</label>
+                        <input type="text" name="last-name" required>
                     </div>
 
                     <div class="pair">    
-                        <label for="e-mail">E-Mail</label>
-                        <input type="email" name="e-main">
+                        <label for="e-mail">*E-Mail</label>
+                        <input type="email" name="e-mail" required>
                     </div>
 
                     <div class="pair">
@@ -54,15 +53,17 @@
                     </div>
                     
                     <div class="pair">
-                        <label for="padd">Password</label>
-                        <input type="password" name="pass">
+                        <label for="pass">*Password</label>
+                        <input type="password" name="pass" required>
                     </div>
                     <div class="pair">
-                        <label for="comfirm-pass">Confirm Password</label>
-                        <input type="password" name="confirm-pass">
+                        <label for="comfirm-pass">*Confirm Password</label>
+                        <input type="password" name="confirm-pass" required>
                     </div>
-
                 </div>
+
+                <button class="create" type="submit">Create Account</button>
+                <p>already have an account? <a href="#">Log In</a></p>
 
             </form>
         </div>
